@@ -184,7 +184,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
             }
 
             [Test]
-            public void test05invalidEmailerror()
+            public void test05_invalidEmail_error()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.Manage().Window.Size = new System.Drawing.Size(784, 816);
@@ -222,7 +222,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
                 Assert.That(driver.FindElement(By.Id("email-error")).Text, Is.EqualTo("Must be a valid email address"));
             }
             [Test]
-            public void test07ageOmittedageRequired()
+            public void test07_ageOmittedage_Required()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.Manage().Window.Size = new System.Drawing.Size(783, 816);
@@ -253,7 +253,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
                 Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Age (>=16) is required"));
             }
             [Test]
-            public void test08accidentsOmittederror()
+            public void test08_accidentsOmitted_error()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.Manage().Window.Size = new System.Drawing.Size(783, 816);
@@ -284,7 +284,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
                 Assert.That(driver.FindElement(By.Id("accidents-error")).Text, Is.EqualTo("Number of accidents is required"));
             }
             [Test]
-            public void test09experienceOmittederror()
+            public void test09_experienceOmitted_error()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.Manage().Window.Size = new System.Drawing.Size(783, 816);
@@ -305,7 +305,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
                 Assert.That(driver.FindElement(By.Id("experience-error")).Text, Is.EqualTo("Years of experience is required"));
             }
             [Test]
-            public void test10age16experience0accidents0error()
+            public void test10_age16experience0accidents0_error()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.Manage().Window.Size = new System.Drawing.Size(782, 823);
@@ -329,7 +329,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
                 Assert.That(driver.FindElement(By.Id("age-error")).Text, Is.EqualTo("Please enter a value greater than or equal to 16."));
             }
             [Test]
-            public void test11age50experience34noInsurance()
+            public void test11_age50experience34_noInsurance()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.FindElement(By.CssSelector(".btn")).Click();
@@ -352,7 +352,7 @@ namespace Mariana_Mozzer_8665539_Assignment3
                 }
             }
             [Test]
-            public void test12experienceNegativeerror()
+            public void test12_experienceNegative_error()
             {
                 driver.Navigate().GoToUrl("http://localhost/prog2070a03/prog2070a03/");
                 driver.FindElement(By.CssSelector(".btn")).Click();
